@@ -1,10 +1,12 @@
 package Algorithms;
 
+import java.util.LinkedList;
+import java.util.Stack;
+
 public class BinarySearch {
 
 	public static void main(String[] args) {
-		int[]array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; 
-		System.out.println(BinarySearch.binarySearch(array, 0, array.length - 1, 4));
+
 	}
 	
 	public static int binarySearch(int[] array, int start, int end, int target) {
@@ -17,5 +19,4 @@ public class BinarySearch {
 		
 		return binarySearch(array, midIndex + 1, end, target); 
 	}
-
 }
